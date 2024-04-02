@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGoodWithChildren"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/tvDogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Golden Retriever" />
+
+    <TextView
+        android:id="@+id/tvGoodWithChildren"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvDogName"
+        app:layout_constraintStart_toStartOf="@id/tvDogName"
+        app:layout_constraintTop_toBottomOf="@id/tvDogName"
+        tools:text="Good with Children: 5" />
+
+    <TextView
+        android:id="@+id/tvGoodWithOtherDogs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvGoodWithChildren"
+        app:layout_constraintStart_toStartOf="@id/tvGoodWithChildren"
+        app:layout_constraintTop_toBottomOf="@id/tvGoodWithChildren"
+        tools:text="Good with Other Dogs: 5" />
+
+    <TextView
+        android:id="@+id/tvEnergy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvGoodWithOtherDogs"
+        app:layout_constraintStart_toStartOf="@id/tvGoodWithOtherDogs"
+        app:layout_constraintTop_toBottomOf="@id/tvGoodWithOtherDogs"
+        tools:text="Energy: 3" />
+
+    <TextView
+        android:id="@+id/tvLifeExpectancy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvEnergy"
+        app:layout_constraintStart_toStartOf="@id/tvEnergy"
+        app:layout_constraintTop_toBottomOf="@id/tvEnergy"
+        tools:text="Life Expectancy: 10-12 years" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
